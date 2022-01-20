@@ -1,0 +1,386 @@
+*{padding: 0;margin: 0;}
+#header{}
+.topheader{}
+.topheaderbgc{background-color:#203154;}
+.topheadercontainer{width: 1170px;margin: auto;}
+.topheaderdfacjcsb{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.emailnumber{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.emailnumber a{
+    font-size: 21px;
+    /* margin-right: 60px; */
+    padding: 15px 0px;
+    display: block;
+    text-decoration: none;
+}
+
+.emailnumber a:first-child{ 
+    border-right: 1px solid white;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+.emailnumber a i{margin-right: 5px;}
+.loginregis{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.loginregis a{
+    text-decoration: none;
+    font-size: 21px;
+    display: block;
+
+}
+.loginregis a i{
+    margin-right: 10px;
+ }
+.loginregis button{
+    font-size: 18px;
+    padding: 17px 20px;
+    background-color: #00897B;
+    margin-left: 30px;
+    border: none;
+}
+/* down header starts */
+.downheader{}
+.downheaderbgc{background-color: green;}
+.downheadercontainer{width: 1170px; margin: auto;}
+.downheaderdfaicjcsb{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.srdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.srdiv img{
+    height: 90px;
+
+}
+.srdiv a{
+    text-decoration: none;
+    margin-left: 28px;
+    font-size: 27px;
+    font-weight: 800;
+    color: white;
+}
+
+.menu{}
+.menubar{}
+ul.menubars{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ul.menubars li{
+    list-style: none;
+}
+ul.menubars li a{
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+}
+ul.menubars li:hover a{
+    background-color: black;
+    color: white;
+}
+.downright{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.downright  a{text-decoration: none;}
+.downright  a i{
+    font-size: 30px;
+    color: white;
+    margin: 0 10px;
+    display: block;
+}
+.downright a:hover{ 
+    background-color: black;
+    
+}
+/* down header ends */
+/* dropdown starts  */
+li.dropdown{
+    position: relative;
+}
+.megamenu{
+    position: absolute;
+    background-color: rgb(19, 19, 24);
+    width: 1170px;
+    left: -385px;
+    top: 66px;
+    transform: scaleY(1);
+    opacity: 1;
+    transition: .5s;
+}
+.menubars li.dropdown:hover .megamenu{ 
+    transform: scaleY(0);
+    opacity: 0;
+    
+}
+
+.megamenu ul{list-style: none;}
+.megamenu ul li a{}
+.megamenu h3{
+    padding-left: 38px;
+    border-bottom: 1px solid brown;
+    color: white;
+}
+.category{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.category-box{}
+ul.submenu{
+    position: absolute;
+    width: 200px;
+    background-color: rgb(50, 50, 71);
+    left: 0px;
+    list-style: none;
+    transform: scaleY(1);
+    transition: .5s;
+    opacity: 1;
+    margin-top: 23px;
+    
+}
+.menubars li.dropdown:hover .submenu{ 
+    transform: scaleY(0);
+    opacity: 0;
+    
+}
+/* dropdown ends */
+
+/* introduction parts starts  */
+#myself{
+    background: url(4.jpg) no-repeat center ;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: table;
+    text-align: center;
+    
+    
+
+}
+/*  */
+/* .overlay te je je property gulo ache oigulo diye jekono div ba imager opore opacity tir moto same kaj kora jay */
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #111111;
+    opacity: .85;
+}
+
+.myselfcontainer{}
+.myselfdfaicjcsb{}
+.prelative{}
+.prelative img{
+
+}
+.pabosolute{
+    /* kono lekhake middlele anar jonne likhte hoy  (position:absolute;  top:50% ; right:50%;transform:translate(-50%)) */
+    position: absolute;
+    top: 50%;
+    right: 20%;
+    transform: translateY(-50%);
+}
+.pabosolute h3{
+    font-size: 36px;
+    font-weight: 100;
+    color: #8B0744;
+}
+.pabosolute h2{
+    font-size: 85px;
+    color: #FFFFFF;
+}
+.pabosolute h5{
+    font-size: 30px;
+    color: #F9F9F9;
+    font-weight: 700;
+}
+/*  
+.pabosolute h5 span::after{ 
+    content: "|";
+    text-align: center;
+    display: inline-block;
+    padding: 0px 10px 0px 10px;
+    color: #CC005F;
+}  ei babeo border deya jay
+*/
+.pabosolute h5 span{
+    border-right: 1px solid;
+    padding: 0px 10px 0px 0px;
+    margin-right: 10px;
+    border-color: #CC005F;
+}
+
+.pabosolute button{
+    border: 1px solid;
+    margin: 20px 0px;
+    background: #00000000;
+    border-color: #fff;
+}
+.pabosolute button a{
+    padding: 15px 45px;
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+    color: #FFFFFF;
+
+}
+
+.pabosolute button:hover { 
+    background-color:#CC005F;
+    color: #fff;
+    border-color: #CC005F !important;
+   /* button:hover likhle puro button hover hove r button:hover a likhle shudu a er padding er jaygatoke hover hove */
+}
+
+.myselficons{
+    list-style: none;
+    display: flex;
+    top: 114%;
+    right: 26%;
+    transform: translateY(-50%);
+    position: absolute;
+    font-size: 50px;
+}
+.myselficons li{}
+.myselficons li a{
+    display: block;
+    padding: 0px 16px;
+}
+.myselficons li a i{
+    color: white;
+}
+.myselficons li a:hover i { 
+    color: #CC005F;
+}
+
+/* introduction parts ends */
+
+/* ABOUT SECTION STARTS */
+.aboutsection{}
+.aboutcontainer{width: 1170px;margin: auto;}
+.about{
+    text-align: center;
+    margin-top: 100px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about h1{
+    position: absolute;
+    display: inline;
+    font-size: 40px;
+    font-weight: 700;
+    border-bottom: 2px solid;
+
+}
+.aboutdfaicjcsb{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 186px;
+}
+.aboutleftdiv{}
+.objective{}
+.objective h1{font-size: 34px;}
+.objective p{
+    margin: 10px 0px;
+    font-size: 20px;
+}
+.whatido{margin: 60px 0px;}
+.whatido h1{font-size: 34px;}
+.whatido p{
+    margin: 10px 0px;
+    font-size: 20px;
+}
+.unorderdiv{
+    width: 80%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    line-height: 100px;
+    font-size: 30px;
+    
+}
+.upli{}
+.upli li{}
+.upli li i{
+    color: #CF1169;
+    margin-right: 10px;
+}
+.downli{}
+.downli li{}
+.downli li i{ 
+    color: #CF1169;
+    margin-right: 10px;
+}
+.aboutsignature{
+    font-style: italic;
+    margin: 20px 0px;
+}
+.aboutsignature h5{font-size: 20px;}
+.aboutbutton{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+.button1{}
+.button1 button{
+    padding: 18px 40px;
+    border: none;
+    background-color: #CF1169;
+}
+
+.button1 button a{
+    text-decoration: none;
+    font-size: 17px;
+}
+.button1 button a i{margin-right: 7px;}
+.button2 button{ 
+    padding: 18px 40px;
+    border-color: #CF1169;
+}
+.button2:hover button{background-color: #CF1169;}
+.button2 button a{
+    text-decoration: none;
+    font-size: 17px;
+}
+.button2 button a i{margin-right: 7px;}
+.aboutright{}
+.rightimage {}
+.rightimage img{
+    border-radius: 213px;
+}
+.biodata{
+    font-size: 30px;
+    line-height: 45px;
+    padding: 10px 0px 0px 88px;
+
+}
+.data{}
+.data li{}
+/* ABOUT SECTION ENDS */
